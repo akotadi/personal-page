@@ -1,0 +1,15 @@
+.award-content {
+
+    .introduction {
+        background-color: #ba0c00;
+        background-image: -webkit-linear-gradient(left,#750000,#a30101);
+        background-image: linear-gradient(90deg,#750000,#a30101);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorStr="#008fba",endColorStr="#03c4e8",gradientType="1");
+        color: #fff;
+    }
+
+    .award-section {
+        display: block;
+        padding: 30px;
+    }
+}

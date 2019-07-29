@@ -1,0 +1,48 @@
+.project-content {
+
+    .introduction {
+        background-color: #ba0c00;
+        background-image: -webkit-linear-gradient(left,#750000,#a30101);
+        background-image: linear-gradient(90deg,#750000,#a30101);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorStr="#008fba",endColorStr="#03c4e8",gradientType="1");
+        color: #fff;
+    }
+
+    .project-section {
+        display: block;
+        padding: 1rem;
+        @media (min-width: 992px) {
+            padding: 5rem;
+        }
+
+        @media (min-width: 768px) {
+            padding: 3rem;
+        }
+
+        .custom-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-column-gap: 1.25rem;
+            grid-row-gap: 1.25rem;
+
+            @media (min-width: 768px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media (min-width: 1200px) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            @media (min-width: 1550px) {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+
+            .custom-grid-element {
+                grid-column: auto;
+                height: 100%;
+                background-position: center;
+                background-size: 100%;
+            }
+        }        
+    }
+}

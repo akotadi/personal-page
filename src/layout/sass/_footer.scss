@@ -1,0 +1,31 @@
+.layout-footer {
+    @include transition(margin-left $transitionDuration);
+    background-color: $footerBgColor;
+    color: $footerTextColor;
+    padding: 1em 2em;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+
+    .footer-text-bold {
+        font-weight: bolder;
+    }
+
+    .footer-link {
+        color:white;
+        background-color: transparent !important;
+    }
+
+    .footer-img {
+        vertical-align: bottom;
+    }
+
+    .footer-container {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+}
