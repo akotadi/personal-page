@@ -36,8 +36,8 @@ export class AppProfile extends Component {
     render() {
         return  (
             <div className="layout-profile">
-                <div>
-                    <img src="./assets/layout/images/avatar.png" alt="" />
+                <div className="thumbnail">
+                    <img className="portrait" src="./assets/layout/images/profile.jpg" alt="" />
                 </div>
                 <button className="p-link layout-profile-link" onClick={this.onClick}>
                     <span className="username">Manuel Calva</span><span>     </span>
@@ -63,6 +63,11 @@ export class AppProfile extends Component {
                                 </a>
                             </div>
                             <div className="p-col">
+                                <a className="p-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jmch7795">
+                                    <FontAwesomeIcon color="FireBrick" size="lg" icon={faLinkedin} />
+                                </a>
+                            </div>
+                            <div className="p-col">
                                 <a className="p-link" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/jmch.7795">
                                     <FontAwesomeIcon color="FireBrick" size="lg" icon={faFacebook} />
                                 </a>
@@ -70,11 +75,6 @@ export class AppProfile extends Component {
                             <div className="p-col">
                                 <a className="p-link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/akotadi">
                                     <FontAwesomeIcon color="FireBrick" size="lg" icon={faTwitter} />
-                                </a>
-                            </div>
-                            <div className="p-col">
-                                <a className="p-link" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/jmch7795">
-                                    <FontAwesomeIcon color="FireBrick" size="lg" icon={faLinkedin} />
                                 </a>
                             </div>
                             <div className="p-col">
