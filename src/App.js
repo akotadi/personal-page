@@ -90,7 +90,7 @@ class App extends Component {
             { label: 'Home', icon: 'pi pi-fw pi-home', command: () => { window.location.hash = "/" } },
             { label: 'Projects', icon: 'pi pi-fw pi-briefcase', command: () => { window.location.hash = "/projects" } },
             { label: 'Awards', icon: 'pi pi-fw pi-star', command: () => { window.location.hash = "/awards" } },
-            { label: 'View Source', icon: 'pi pi-fw pi-search', command: () => { window.location.hash = "https://github.com/akotadi/akotadi.github.io"}}
+            { label: 'View Source', icon: 'pi pi-fw pi-search', command: () => { window.location = "https://github.com/akotadi/personal-page"}}
         ];
     }
 
