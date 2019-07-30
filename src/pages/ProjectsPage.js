@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { Card } from 'primereact/card';
+
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; 
 
@@ -166,12 +168,9 @@ export class ProjectsPage extends Component {
 
         return (
             <div className="project-content">
-                <div className="project-section introduction">
-                    <div className="feature-intro">
-                        <h1>Projects Page</h1>
-                        <p>As I said, I am a dummy programmer. This is a little review of my programming life in form of projects. </p>
-                    </div>
-                </div>
+                <Card className="project-section introduction" title="Projects Page">
+                    As I said, I am a dummy programmer. This is a little review of my programming life in form of projects.
+                </Card>
 
                 <div className="project-section implementation">
                     <div className="custom-grid">

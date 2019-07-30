@@ -10,6 +10,10 @@
 
     .award-section {
         display: block;
-        padding: 30px;
+        padding: 0.5rem;
+
+        @media (min-width: 768px) {
+            padding: 1rem;
+        }
     }
 }

@@ -4,6 +4,7 @@ import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import customSlider from './../layout/_customSlider.scss';
 
+import { Card } from 'primereact/card';
 import { TabView, TabPanel } from 'primereact/tabview';
 
 const images = {
@@ -39,13 +40,10 @@ export class AwardsPage extends Component {
 
         return (
             <div className="award-content">
-                <div className="award-section introduction">
-                    <div className="feature-intro">
-                        <h1>Awards Page</h1>
-                        <p>During my life I have been improving myself little by little, this section is a sample of my development in this world. </p>
-                        <p>Also, is a reminder of what I can do and a motivation to myself.</p>
-                    </div>
-                </div>
+                <Card className="award-section introduction" title="Awards Page">
+                    <p>During my life I have been improving myself little by little, this section is a sample of my development in this world. </p>
+                    <p>Also, is a reminder of what I can do and a motivation to myself.</p>
+                </Card>
 
                 <div className="award-section implementation">
                     <TabView activeIndex={activeIndex} onTabChange={(e) => this.setState({ activeIndex: e.index })}>

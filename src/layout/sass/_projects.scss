@@ -10,13 +10,10 @@
 
     .project-section {
         display: block;
-        padding: 1rem;
-        @media (min-width: 992px) {
-            padding: 5rem;
-        }
+        padding: 0.5rem;
 
         @media (min-width: 768px) {
-            padding: 3rem;
+            padding: 1rem;
         }
 
         .custom-grid {
