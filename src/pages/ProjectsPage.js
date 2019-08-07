@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component, Suspense } from 'react';
 
 import { Card } from 'primereact/card';
 
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; 
 
-import CustomCard from './../components/CustomCard';
+const CustomCard = React.lazy(() => import('./../components/CustomCard'));
 
-const projectsImagesPath = './assets/demo/images/projects';
+const projectsImagesPath = './assets/content/images/projects';
 
 const projects = [
     {
@@ -177,7 +177,9 @@ export class ProjectsPage extends Component {
                         {
                             projects.map(project => (
                                 <div className="custom-grid-element" key={project.title.trim().replace(/\s+/g, '-').toLowerCase()}>
-                                    <CustomCard onClickCard={this.handleClickCard} project={project} />
+                                    <Suspense fallback={<i className="pi pi-spin pi-spinner" style={{ 'fontSize': '3em' }}></i>}>
+                                        <CustomCard onClickCard={this.handleClickCard} project={project} />
+                                    </Suspense>
                                 </div>
                             ))
                         }
