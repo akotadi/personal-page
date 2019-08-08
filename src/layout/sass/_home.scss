@@ -1,5 +1,6 @@
 $bg-color: #333;
 $header-color: rgb(255, 255, 255);
+$text-color: rgb(0, 0, 0);
 $message-color: rgb(255, 255, 255);
 
 .home-content {
@@ -18,13 +19,14 @@ $message-color: rgb(255, 255, 255);
 
         &-header {
             text-align: center;
-            font-size: 2em;
             color: $header-color;
+            font:2.5em/1 monospace;
+            font-variant:small-caps;
         }
 
         &-message {
             text-align: left;
-            font-size: 1.35em;
+            font-size: 1.25em;
             color: $message-color;
             margin: auto;
 
@@ -92,5 +94,13 @@ $message-color: rgb(255, 255, 255);
         @media (min-width: 768px) {
             padding: 1rem;
         }
+    }
+
+    .home-text {
+        text-align: left;
+        color: $text-color;
+        font:1.3em/1 'Crimson Text', serif;
+        font-variant:small-caps;
+        text-align: justify;
     }
 }

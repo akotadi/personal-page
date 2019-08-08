@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { Card } from 'primereact/card';
 import { Button } from 'primereact/button';
+import { InputText } from "primereact/inputtext";
 
 import Typist from 'react-typist';
 
@@ -54,12 +55,10 @@ export class HomePage extends Component {
                                 <div className="container">
                                     <div className="thumbex">
                                         <div className="thumbnail">
-                                            <a href="javascript:void(0)">
-                                                <img src="./assets/content/images/life/mainImage.jpeg" alt="" />
-                                                <span>
-                                                    Manuel Calva
-                                                </span>
-                                            </a>
+                                            <img src="./assets/content/images/life/mainImage.jpeg" alt="" />
+                                            <span>
+                                                Manuel Calva
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -121,8 +120,16 @@ export class HomePage extends Component {
                                         </a>
                                     </div>
                                 </div>
-                                <div className="p-grid">
-                                    <div className="p-col">
+                                <div className="p-grid p-justify-center">
+                                    <div className="p-col-12 p-md-3">
+                                        <div className="p-inputgroup" style={{ margin: '10px auto', alignItems: 'center', justifyContent: 'center' }}>
+                                            <span className="p-inputgroup-addon" style={{ opacity: 0.6 }}>
+                                                <i className="pi pi-envelope"></i>
+                                            </span>
+                                            <InputText value="calvam@acm.org" disabled={true} />
+                                        </div>
+                                    </div>
+                                    <div className="p-col-12 p-md-6 p-md-offset-1">
                                         <a target="_blank" rel="noopener noreferrer" href="./ResumeUS.pdf">
                                             <Button label="Check my Resume!" className="p-button-raised p-button-secondary contact-file" icon="pi pi-file-pdf" />
                                         </a>
@@ -135,7 +142,22 @@ export class HomePage extends Component {
 
                 <div className="home-section implementation">
                     <div className="p-grid">
-                        <div className="p-col-12 p-lg-6">
+                        <div className="p-col-12 p-lg-5">
+                            <div style={{ height: '100%', display: 'flex', alignItems: 'center'}}>
+                                <div className="home-text">
+                                    <p>
+                                        Oh! Looks like you are in my humble Kingdom.
+                                        This page is, probably, not the most beautiful way to share who I am to the world.
+                                        But, if you are here, is because something call your attetion from me. And because of that, I will introduce myself:
+                                </p>
+                                    <p style={{ width: '90%', margin: '0 auto' }}>
+                                        My name is Manuel Calva, currently studying the seventh semester in Computer Systems at ESCOM-IPN in Mexico.
+                                        Of course, I am Mexican with 24 years old, do not ask how I have survived so much.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="p-col-11 p-lg-6 p-lg-offset-1">
                             <div className="gallery">
                                 {lifeImages.map(image => {
                                     return (
@@ -155,17 +177,6 @@ export class HomePage extends Component {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="c-glitch-container">
-                        <div className="c-glitch" style={{ "background-image": "url('./assets/content/images/life/mainImage.jpeg')" }}>
-                            <div className="c-glitch__img" style={{ "background-image": "url('./assets/content/images/life/mainImage.jpeg')" }}></div>
-                            <div className="c-glitch__img" style={{ "background-image": "url('./assets/content/images/life/mainImage.jpeg')" }}></div>
-                            <div className="c-glitch__img" style={{ "background-image": "url('./assets/content/images/life/mainImage.jpeg')" }}></div>
-                            <div className="c-glitch__img" style={{ "background-image": "url('./assets/content/images/life/mainImage.jpeg')" }}></div>
-                            <div className="c-glitch__img" style={{ "background-image": "url('./assets/content/images/life/mainImage.jpeg')" }}></div>
-                        </div>
-                    </div> */}
-
-
                 </div>
             </div>
         );
