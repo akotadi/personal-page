@@ -15,7 +15,6 @@ import {
     faTelegramPlane,
 } from '@fortawesome/free-brands-svg-icons';
 
-import './../layout/_glitchEffect.scss';
 import './../layout/_imageRevealing.scss';
 import './../layout/_galleryMain.scss';
 
