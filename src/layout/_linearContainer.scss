@@ -1,0 +1,60 @@
+$linear-border: #20B2AA;
+$linear-hover: #4169E1;
+
+.linear-container {
+  
+    margin: 2.3em auto;
+    list-style: none;
+    padding-inline-start: 0;
+
+    svg, img, i { 
+        margin: 5px auto;
+        width: 56px !important; 
+        height: 56px !important; 
+        padding: 8px;
+        text-align: center; 
+        font-size: 35px;
+        display: block; 
+        max-width: 100%; 
+        border-radius: 50%;
+        filter: grayscale(100%);
+        border: solid 5px $linear-border;
+        color: $linear-hover;
+        transition: .15s;
+
+        &:hover {
+            filter: grayscale(0);
+        }
+    }
+
+    i::before {
+        position:relative;
+        top: calc(50% - 20px);
+    }
+
+    &-text {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    &-technologies {
+        -webkit-box-align: center!important;
+        -ms-flex-align: center!important;
+        align-items: center!important;
+        -webkit-box-pack: center!important;
+        -ms-flex-pack: center!important;
+        justify-content: center!important;
+        display: -webkit-box!important;
+        display: -ms-flexbox!important;
+        display: flex!important;
+
+        li {
+            float: left;
+            margin: 0 5px;
+            display: inline;
+        }
+    }
+    
+}

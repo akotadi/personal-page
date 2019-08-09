@@ -13,10 +13,19 @@ import {
     faTwitter,
     faLinkedin,
     faTelegramPlane,
+    faWindows,
+    faLinux,
+    faHtml5,
+    faCss3Alt,
+    faGitAlt,
+    faNode,
+    faReact,
 } from '@fortawesome/free-brands-svg-icons';
 
 import './../layout/_imageRevealing.scss';
 import './../layout/_galleryMain.scss';
+import './../layout/_circleContainer.scss';
+import './../layout/_linearContainer.scss';
 
 const lifeImages = [
     { src: './assets/content/images/life/1.jpg', width: 97.32, height: 130 },
@@ -37,11 +46,53 @@ export class HomePage extends Component {
 
         this.state = {
             renderMsg: false,
+            isHoveringLanguage: false,
+            languageTime: '0 years',
+            isHoveringRdbms: false,
+            rdbmsTime: '0 years',
+            isHoveringIdioms: false,
+            idiomsLevel: 'fluent',
         }
     }
 
     onHeaderTyped = () => {
         this.setState({ renderMsg: true });
+    }
+
+    handleMouseHover = (type = 0, time = 0) => {
+        switch (type) {
+            case 0:
+                this.setState({ isHoveringLanguage: true, languageTime: `${time} year(s)` });
+                break;
+            case 1:
+                this.setState({ isHoveringRdbms: true, rdbmsTime: `${time} year(s)` });
+                break;
+            case 2:
+                this.setState({ isHoveringIdioms: true, idiomsLevel: `${time}` });
+                break;
+
+            default:
+                break;
+        }
+        console.log(this.state);
+    }
+
+    handleMouseHoverLeave = (type = 0) => {
+        switch (type) {
+            case 0:
+                this.setState({ isHoveringLanguage: false});
+                break;
+            case 1:
+                this.setState({ isHoveringRdbms: false });
+                break;
+            case 2:
+                this.setState({ isHoveringIdioms: false });
+                break;
+
+            default:
+                break;
+        }
+        console.log(this.state);
     }
 
     render() {
@@ -86,7 +137,7 @@ export class HomePage extends Component {
                                             <Typist.Delay ms={750} />
                                             dummy programmer
                                         <Typist.Delay ms={250} />
-                                            {' looking to improve.'}
+                                            {' looking to improve in React.'}
                                         </Typist>
                                     </React.Fragment>
                                 ) : null}
@@ -148,11 +199,16 @@ export class HomePage extends Component {
                                         Oh! Looks like you are in my humble Kingdom.
                                         This page is, probably, not the most beautiful way to share who I am to the world.
                                         But, if you are here, is because something call your attetion from me. And because of that, I will introduce myself:
-                                </p>
+                                    </p>
                                     <p style={{ width: '90%', margin: '0 auto' }}>
-                                        My name is Manuel Calva, currently studying the seventh semester in Computer Systems at ESCOM-IPN in Mexico.
-                                        Of course, I am Mexican with 24 years old, do not ask how I have survived so much.
-                                </p>
+                                        My name is Manuel Calva, also known as "Akotadi" as my nickname in someplaces.
+                                        As probably you can see, I am Mexican with 24 years old, do not ask how I have survived so much. 
+                                        And I do my best to express myself in English but languages are not my forte.
+                                    </p>
+                                    <p style={{ width: '90%', margin: '10px auto' }}>
+                                        Currently, I am studying the seventh semester in Computer Systems at ESCOM-IPN in Mexico with a GPA of 93/100 and I expect to be graduated at June 2021.
+                                        Also, I attend to the ACM Student Chapter (also known as “Club de Algoritmia” in my school) because I am interested in competitive programming.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -176,7 +232,170 @@ export class HomePage extends Component {
                             </div>
                         </div>
                     </div>
+                    <hr />
+                    <div className="p-grid p-justify-center">
+                        <div className="p-col-10">
+                            <div style={{ height: '100%', display: 'flex', alignItems: 'center' }}>
+                                <div className="home-text">
+                                    <p>
+                                        In this page you can see a few images of myself and my life.
+                                        Also, you can find a few proofs of my trajectory as a student and developer in the another pages, I hope you enjoy knowing me.
+                                        Unfortunately, I do not have any working experience yet, but I expect include some of that soon.
+                                    </p>
+                                    <p>
+                                        Fortunately, I have many <span style={{ fontWeight: 'bold' }}>skills</span> that I have developed in this time:
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="p-grid p-justify-center">
+                        <div className="p-col-10 p-lg-3">
+                            <h4>PROGRAMMING LANGUAGES</h4>
+                            <ul className='circle-container circle-container-language'>
+                                <li
+                                    onMouseEnter={this.handleMouseHover.bind(this, 0, 2.5)}
+                                    onMouseLeave={this.handleMouseHoverLeave.bind(this, 0)}
+                                >
+                                    <i className="icon-c" />
+                                </li>
+                                <li
+                                    onMouseEnter={this.handleMouseHover.bind(this, 0, 2.5)}
+                                    onMouseLeave={this.handleMouseHoverLeave.bind(this, 0)}
+                                >
+                                    <i className="icon-cplusplus" />
+                                </li>
+                                <li
+                                    onMouseEnter={this.handleMouseHover.bind(this, 0, 1.5)}
+                                    onMouseLeave={this.handleMouseHoverLeave.bind(this, 0)}
+                                >
+                                    <i className="icon-java" />
+                                </li>
+                                <li
+                                    onMouseEnter={this.handleMouseHover.bind(this, 0, 1.5)}
+                                    onMouseLeave={this.handleMouseHoverLeave.bind(this, 0)}
+                                >
+                                    <i className="icon-javascript" />
+                                </li>
+                                <li
+                                    onMouseEnter={this.handleMouseHover.bind(this, 0, 0.5)}
+                                    onMouseLeave={this.handleMouseHoverLeave.bind(this, 0)}
+                                >
+                                    <i className="icon-php" />
+                                </li>
+                                <li
+                                    onMouseEnter={this.handleMouseHover.bind(this, 0, 0.5)}
+                                    onMouseLeave={this.handleMouseHoverLeave.bind(this, 0)}
+                                >
+                                    <i className="icon-python" />
+                                </li>
+                                <li>
+                                    {
+                                        this.state.isHoveringLanguage &&
+                                        <div className="circle-container-text">
+                                            {this.state.languageTime}
+                                        </div>
+                                    }
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="p-col-10 p-lg-3 p-lg-offset-1">
+                            <h4>RDBMS</h4>
+                            <ul className='circle-container circle-container-rdbms'>
+                                <li
+                                    onMouseEnter={this.handleMouseHover.bind(this, 1, 1.5)}
+                                    onMouseLeave={this.handleMouseHoverLeave.bind(this, 1)}
+                                >
+                                    <i className="icon-mysql" />
+                                </li>
+                                <li
+                                    onMouseEnter={this.handleMouseHover.bind(this, 1, 1.5)}
+                                    onMouseLeave={this.handleMouseHoverLeave.bind(this, 1)}
+                                >
+                                    <i className="icon-mariadb" />
+                                </li>
+                                <li
+                                    onMouseEnter={this.handleMouseHover.bind(this, 1, 0.5)}
+                                    onMouseLeave={this.handleMouseHoverLeave.bind(this, 1)}
+                                >
+                                    <i className="icon-postgres" />
+                                </li>
+                                <li
+                                    onMouseEnter={this.handleMouseHover.bind(this, 1, 0.3)}
+                                    onMouseLeave={this.handleMouseHoverLeave.bind(this, 1)}
+                                >
+                                    <i className="icon-mongodb" />
+                                </li>
+                                <li>
+                                    {
+                                        this.state.isHoveringRdbms &&
+                                        <div className="circle-container-text">
+                                            {this.state.rdbmsTime}
+                                        </div>
+                                    }
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="p-col-10 p-lg-3 p-lg-offset-1">
+                            <h4>Idioms</h4>
+                            <ul className='circle-container circle-container-idioms'>
+                                <li
+                                    onMouseEnter={this.handleMouseHover.bind(this, 2, 'Native')}
+                                    onMouseLeave={this.handleMouseHoverLeave.bind(this, 2)}
+                                >
+                                    <img src='http://icons.iconarchive.com/icons/custom-icon-design/2014-world-cup-flags/48/Mexico-icon.png' alt="..." />
+                                </li>
+                                <li
+                                    onMouseEnter={this.handleMouseHover.bind(this, 2, 'Fluent')}
+                                    onMouseLeave={this.handleMouseHoverLeave.bind(this, 2)}
+                                >
+                                    <img src='http://icons.iconarchive.com/icons/custom-icon-design/2014-world-cup-flags/48/USA-icon.png' alt="..." />
+                                </li>
+                                <li
+                                    onMouseEnter={this.handleMouseHover.bind(this, 2, 'Basic')}
+                                    onMouseLeave={this.handleMouseHoverLeave.bind(this, 2)}
+                                >
+                                    <img src='http://icons.iconarchive.com/icons/custom-icon-design/2014-world-cup-flags/48/Italy-icon.png' alt="..." />
+                                </li>
+                                <li>
+                                    {
+                                        this.state.isHoveringIdioms &&
+                                        <div className="circle-container-text">
+                                            {this.state.idiomsLevel}
+                                        </div>
+                                    }
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="p-grid p-justify-center">
+                        <div className="p-col-10 p-lg-2">
+                            <h4>PLATFORMS</h4>
+                            <ul className='linear-container linear-container-platforms'>
+                                <li><FontAwesomeIcon color="Black" size="2x" icon={faWindows} /></li>
+                                <li><FontAwesomeIcon color="Black" size="2x" icon={faLinux} /></li>
+                            </ul>
+                        </div>
+                        <div className="p-col-10 p-lg-9 p-lg-offset-1">
+                            <h4>TECHNOLOGIES</h4>
+                            <ul className='linear-container linear-container-technologies'>
+                                <li><FontAwesomeIcon color="Black" size="2x" icon={faHtml5} /></li>
+                                <li><FontAwesomeIcon color="Black" size="2x" icon={faCss3Alt} /></li>
+                                <li><FontAwesomeIcon color="Black" size="2x" icon={faGitAlt} /></li>
+                                <li><img alt="" src="https://img.icons8.com/material-sharp/48/000000/console.png" /></li>
+                                <li><i className="icon-jquery" /></li>
+                                <li><img alt="" src="https://icon-library.net//images/ajax-icon/ajax-icon-7.jpg" /></li>
+                                <li><i className="icon-spring" /></li>
+                                <li><img alt="" src="https://www.sushovan.de/design/icons/tex.ico" /></li>
+                                <li><FontAwesomeIcon color="Black" size="2x" icon={faNode} /></li>
+                                <li><img alt="" src="https://www.brandeps.com/logo-download/S/Socket-io-01.svg" /></li>
+                                <li><img alt="" src="https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png" /></li>
+                                <li><FontAwesomeIcon color="Black" size="2x" icon={faReact} /></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+                <br />
             </div>
         );
     }
