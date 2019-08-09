@@ -100,10 +100,10 @@ export class AppProfile extends Component {
                 <br></br>
                 <a className="p-link layout-profile-link p-align-center p-justify-center" target="_blank" rel="noopener noreferrer" href="./ResumeUS.pdf">
                     <div className="p-grid">
-                        <div className="p-col-12 p-md-2">
+                        <div className="p-col-2">
                             <FontAwesomeIcon icon={faFilePdf} />
                         </div>
-                        <div className="p-col-12 p-md-10 p-justify-center">
+                        <div className="p-col-10">
                             <span>Resume</span>
                         </div>
                     </div>
