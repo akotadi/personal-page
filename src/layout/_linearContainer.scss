@@ -40,21 +40,19 @@ $linear-hover: #4169E1;
     }
 
     &-technologies {
-        -webkit-box-align: center!important;
-        -ms-flex-align: center!important;
-        align-items: center!important;
-        -webkit-box-pack: center!important;
-        -ms-flex-pack: center!important;
-        justify-content: center!important;
-        display: -webkit-box!important;
-        display: -ms-flexbox!important;
-        display: flex!important;
-
-        li {
-            float: left;
-            margin: 0 5px;
-            display: inline;
-        }
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        justify-content: space-around;
+        flex-flow: row wrap;
+        -webkit-flex-flow: row wrap;
     }
     
 }
