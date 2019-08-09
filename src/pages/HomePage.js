@@ -388,7 +388,7 @@ export class HomePage extends Component {
                                 <li><i className="icon-spring" /></li>
                                 <li><img alt="" src="https://www.sushovan.de/design/icons/tex.ico" /></li>
                                 <li><FontAwesomeIcon color="Black" size="2x" icon={faNode} /></li>
-                                <li><img alt="" src="https://www.brandeps.com/logo-download/S/Socket-io-01.svg" /></li>
+                                <li><img alt="" src="https://i.ibb.co/Hh76Xkb/Pngtree-socket-io-1348233.png" /></li>
                                 <li><img alt="" src="https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png" /></li>
                                 <li><FontAwesomeIcon color="Black" size="2x" icon={faReact} /></li>
                             </ul>
