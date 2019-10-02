@@ -27,7 +27,7 @@ export default class CustomCard extends Component {
             <div className="custom-card">
                 <CardHeader image={project.thumbnail} section={project.section} onClickCardHeader={this.handleClickCardHeader} />
                 <CardBody title={project.title} text={project.description} date={project.date} />
-                <CardFooter link={project.link} />
+                <CardFooter link={project.repository} />
             </div>
         )
     }

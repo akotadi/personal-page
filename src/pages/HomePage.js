@@ -29,7 +29,7 @@ import './../layout/_linearContainer.scss';
 
 const lifeImages = [
     { src: './assets/content/images/life/1.jpg', width: 97.32, height: 130 },
-    { src: './assets/content/images/life/3.gif', width: 110, height: 82.61 },
+    /* { src: './assets/content/images/life/3.gif', width: 110, height: 82.61 }, */
     { src: './assets/content/images/life/2.jpg', width: 86.09, height: 115 },
     { src: './assets/content/images/life/4.jpg', width: 120, height: 90 },
     { src: './assets/content/images/life/5.jpg', width: 82.67, height: 110 },
