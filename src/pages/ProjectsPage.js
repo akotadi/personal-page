@@ -27,6 +27,9 @@ const projects = [
         date: 'Winter 2018',
         section: 'Scholar Project',
         description: 'Auxiliary system for the creation and management of the learning units at my university.',
+        activies: [
+            ''
+        ],
         repository: 'https://github.com/SoftwareEngineerESCOM/APMS-Server',
         link: 'https://softwareengineerescom.gitlab.io/APMS/public/login',
         documentation: 'https://github.com/SoftwareEngineerESCOM/IngSof/blob/master/ManualTecnico/main.pdf',
@@ -55,6 +58,9 @@ const projects = [
         date: 'Winter 2018',
         section: 'Scholar Project',
         description: 'System developed to manage the organization, execution and generate statistics of an award event for the IPN.',
+        activies: [
+            ''
+        ],
         repository: 'https://github.com/akotadi/IPN-Awards',
         link: 'http://18.220.84.158/Front-End/',
         teammates: {
@@ -75,6 +81,9 @@ const projects = [
         date: 'Summer 2019',
         section: 'Learning Project',
         description: 'A webpage made as a test for a working interview, is worth mention that I am currently learning the technologies used.',
+        activies: [
+            ''
+        ],
         repository: 'https://github.com/akotadi/swapi-example',
         link: 'https://swapi-example.herokuapp.com/',
     },
@@ -94,6 +103,9 @@ const projects = [
         date: 'Spring 2018',
         section: 'Scholar Project',
         description: 'A webpage for manage the elective hours (ex: cultural, sport, recreation) of the students.',
+        activies: [
+            ''
+        ],
         repository: 'https://github.com/akotadi/Webelectivo',
         link: 'http://52.15.113.43/',
         teammates: {
