@@ -7,7 +7,6 @@ const imagemin = require('gulp-imagemin');
 const minify = require('gulp-minify');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
-const deploy = require('gulp-gh-pages');
 
 const cssAddonsPath = './css/modules/';
 
@@ -191,11 +190,3 @@ function getLiteJSModules() {
   delete require.cache[require.resolve('./js/modules.lite.js')];
   return require('./js/modules.lite.js');
 }
-
-/**
- * Push build to gh-pages
- */
-gulp.task('deploy', function () {
-  return gulp.src("./dist/**/*")
-    .pipe(deploy())
-});
