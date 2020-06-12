@@ -1,0 +1,91 @@
+// Your custom styles
+
+html,
+body,
+header,
+.intro-section {
+  height: 100%;
+
+  @media (max-width: 450px) {
+    height: 820px;
+  }
+
+  @media (min-width: 451px) and (max-width: 740px) {
+    height: 900px;
+  }
+
+  @media (min-width: 800px) and (max-width: 850px) {
+    height: 950px;
+  }
+}
+
+.custom-yellow{
+  background-color: $custom_palette1;
+}
+
+.custom-card-about {
+  height: 100%;
+}
+
+.dotted-scrollspy {
+  z-index: 2;
+}
+
+.custom-palette1 {
+  color: $custom_palette1 !important;
+  background-color: $custom_palette1 !important;
+}
+
+.custom-palette2 {
+  color: $custom_palette2 !important;
+  background-color: $custom_palette2 !important;
+}
+
+.custom-palette3 {
+  color: $custom_palette3 !important;
+  background-color: $custom_palette3 !important;
+}
+
+.custom-palette4 {
+  color: $custom_palette4 !important;
+  background-color: $custom_palette4 !important;
+}
+
+.custom-palette5 {
+  color: $custom_palette5 !important;
+  background-color: $custom_palette5 !important;
+}
+
+.custom-palette6 {
+  color: $custom_palette6 !important;
+  background-color: $custom_palette6 !important;
+}
+
+.custom_image-container {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .text-lg-justify {
+      text-align: justify!important;
+  }
+}
+
+#mdb-preloader {
+  background-color: $custom_palette2 !important;
+}
+
+#mdb-preloader.loaded {
+  visibility: hidden;
+  transition: .3s ease-in 1s;
+}
+
+// Custom components
+
+@import "custom/custom-navbar";
+@import "custom/custom-intro";
+@import "custom/custom-footer";
+@import "custom/custom-project-card";
+@import "custom/custom-circle-container";
+@import "custom/custom-linear-container";

@@ -1,0 +1,59 @@
+// Your custom variables
+
+/* General */
+$custom_fontSize:14px;
+$custom_bodyBgColor:#edf0f5;
+$custom_textColor:#333333;
+$custom_textSecondaryColor:#707070;
+$custom_borderRadius:3px;
+$custom_dividerColor:#e3e3e3;
+$custom_transitionDuration:.2s;
+$custom_maskBgColor:#424242;
+$custom_palette1: #FAD089;
+$custom_palette2: #FCA66D;
+$custom_palette3: #F5634A;
+$custom_palette4: #ED303C;
+$custom_palette5: #3B8183;
+$custom_palette6: #2B696B;
+$custom_circleBorder: $custom_palette2;
+$custom_circleHover: $custom_palette5;
+$custom_linearBorder: $custom_palette2;
+$custom_linearHover: $custom_palette5;
+
+/* Menu Common */
+$custom_menuitemBadgeBgColor:#970d0d;
+$custom_menuitemBadgeColor:#ffffff;
+$custom_submenuFontSize:13px;
+$custom_menuitemActiveRouteColor:#be1010;
+
+/* Menu Light */
+$custom_menuBgColorFirst:#f3f4f9;
+$custom_menuBgColorLast:#d7dbe8;
+$custom_menuitemColor:#232428;
+$custom_menuitemHoverColor:#a30a0a;
+$custom_menuitemActiveColor:#a30a0a;
+$custom_menuitemActiveBgColor:#ffffff;
+$custom_menuitemBorderColor:rgba(207, 211, 224, 0.6);
+
+/* Menu Dark */
+$custom_menuDarkBgColorFirst:#4d505b;
+$custom_menuDarkBgColorLast:#3b3e47;
+$custom_menuitemDarkColor:#ffffff;
+$custom_menuitemDarkHoverColor:#a30a0a;
+$custom_menuitemDarkActiveColor:#a30a0a;
+$custom_menuitemDarkActiveBgColor:#2e3035;
+$custom_menuitemDarkBorderColor:rgba(52, 56, 65, 0.6);
+
+/* Topbar */
+$custom_topbarLeftBgColor:rgb(90, 90, 90);
+$custom_topbarRightBgColor:rgb(50, 50, 50);
+$custom_topbarItemBadgeBgColor:#a3a3a3;
+$custom_topbarItemBadgeColor:#a30a0a;
+$custom_topbarItemColor:#ffffff;
+$custom_topbarItemHoverColor: #a30a0a;
+$custom_topbarSearchInputBorderBottomColor:#ffffff;
+$custom_topbarSearchInputColor:#ffffff;
+
+/* Footer */
+$custom_footerBgColor:#000000;
+$custom_footerTextColor:#ffffff;

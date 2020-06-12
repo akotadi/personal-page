@@ -1,71 +1,64 @@
 {
   "name": "personal-page",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "http://akotadi.me",
   "private": true,
+  "main": "gulpfile.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/akotadi/personal-page.git"
   },
+  "author": "Manuel CH - Akotadi",
   "license": "MIT",
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.25",
-    "@fortawesome/free-brands-svg-icons": "^5.11.2",
-    "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@fortawesome/react-fontawesome": "^0.1.5",
-    "classnames": "^2.2.6",
-    "gh-pages": "^2.1.1",
-    "node-sass": "^4.12.0",
-    "primeflex": "1.0.0-rc.1",
-    "primeicons": "^2.0.0",
-    "primereact": "^3.2.0",
-    "react": "^16.10.1",
-    "react-app-polyfill": "^1.0.3",
-    "react-awesome-slider": "^1.1.1",
-    "react-dom": "^16.10.1",
-    "react-image-lightbox": "^5.1.0",
-    "react-pose-text": "^3.1.0",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "3.0.1",
-    "react-transition-group": "^2.5.1",
-    "react-typist": "^2.0.5"
+  "scripts": {
+    "js-lint": "eslint js/src/*.js",
+    "scss-lint": "stylelint --config .stylelintrc.json --syntax scss \"**/scss/**/*.scss\"",
+    "js-compile-plugins": "babel js/src/ --out-dir js/dist/",
+    "css-compile": "gulp css-compile",
+    "css-minify": "gulp css-minify",
+    "js-build": "gulp js-build",
+    "js-minify": "gulp js-minify",
+    "deploy": "gulp deploy"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/plugin-proposal-class-properties": "^7.4.4",
-    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/preset-env": "^7.6.2",
-    "@babel/preset-react": "^7.0.0",
-    "css-loader": "^2.1.1",
-    "dts-css-modules-loader": "^1.0.1",
-    "prettier": "^1.17.1",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.41.2"
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.10.1",
+    "@babel/plugin-transform-arrow-functions": "^7.10.1",
+    "@babel/plugin-transform-block-scoped-functions": "^7.10.1",
+    "@babel/plugin-transform-block-scoping": "^7.10.1",
+    "@babel/plugin-transform-classes": "^7.10.1",
+    "@babel/plugin-transform-shorthand-properties": "^7.10.1",
+    "@babel/plugin-transform-template-literals": "^7.10.1",
+    "@babel/polyfill": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/register": "^7.10.1",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-transform-es2015-constants": "^6.1.4",
+    "browser-sync": "^2.26.7",
+    "core-js": "^3.6.5",
+    "eslint": "^5.16.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-zip": "^5.0.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-recommended-scss": "^3.3.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-order": "^3.0.0",
+    "stylelint-scss": "^3.17.2"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build",
-    "test-deploy": "yarn build && (cd build/ && http-server -o)"
+  "dependencies": {},
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not ie <= 11",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "description": ""
 }

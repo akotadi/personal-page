@@ -1,0 +1,22 @@
+.custom-card-project {
+    place-self: center;
+    width: 70%;
+}
+
+.project-type {
+    text-align: left;
+    color: $custom_palette3 !important;
+}
+
+.project-date {
+    text-align: left;
+    text-decoration: underline;
+}
+
+.custom-icon-project {
+    color: $custom_palette4;
+}
+
+.pswp, .pswp__bg, .pswp__scroll-wrap {
+    top: 3% !important;
+}

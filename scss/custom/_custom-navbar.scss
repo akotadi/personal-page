@@ -1,0 +1,25 @@
+.navbar {
+  background: $custom_palette2; 
+  font-weight: 400;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background-color: transparent; 
+}
+@media (min-width: 769px){
+  .navbar:not(.top-nav-collapse) .nav-item, .navbar:not(.top-nav-collapse) .nav-link {
+    color: white !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background: $custom_palette2; 
+  } 
+}
+
+@media (min-width: 769px) {
+  .navbar:not(.top-nav-collapse) {
+    box-shadow: none; 
+  } 
+}
